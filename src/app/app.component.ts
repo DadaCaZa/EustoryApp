@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-import { LoginPage } from '../pages/login/login';
+
 import { HomePage } from '../pages/home/home';
 import { ProfilePage} from '../pages/profile/profile';
 import { ConfigurationViewPage } from '../pages/configuration-view/configuration-view'
@@ -14,7 +14,7 @@ import { ConfigurationViewPage } from '../pages/configuration-view/configuration
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   
-  rootPage:any = LoginPage;
+  rootPage:any = HomePage;
 
   pages: Array<{title: string, component: any, icon: string}>;
 
