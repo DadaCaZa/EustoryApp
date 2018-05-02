@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
+import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view'
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProfilePage } from '../pages/profile/profile';
     MyApp,
     HomePage,
     LoginPage,
-    ProfilePage
+    ProfilePage,
+    ConfigurationViewPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { ProfilePage } from '../pages/profile/profile';
     MyApp,
     HomePage,
     LoginPage,
-    ProfilePage
+    ProfilePage,
+    ConfigurationViewPage
   ],
   providers: [
     StatusBar,
