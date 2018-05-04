@@ -5,13 +5,19 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-</ion-header>
+    <ion-navbar >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+  </ion-header>
 
 
 <ion-content padding>
 
   <ion-list no-lines class="container">
-    <form class="container" (ngSubmit)="submit()">
+    <form class="container">
       <ion-item>
         <ion-img   img-placeholder-background width="300" height="100"src="assets/imgs/lp.png"></ion-img>
       </ion-item>

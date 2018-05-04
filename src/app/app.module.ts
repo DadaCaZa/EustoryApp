@@ -8,8 +8,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
-import { PoiViewPage } from '../pages/poi-view/poi-view'
-import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view'
+import { PoiViewPage } from '../pages/poi-view/poi-view';
+import { SearchViewPage } from '../pages/search-view/search-view';
+import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ConfigurationViewPage} from '../pages/configuration-view/configuration-
     LoginPage,
     ProfilePage,
     PoiViewPage,
-    ConfigurationViewPage
+    ConfigurationViewPage,
+    SearchViewPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { ConfigurationViewPage} from '../pages/configuration-view/configuration-
     LoginPage,
     ProfilePage,
     PoiViewPage,
-    ConfigurationViewPage
+    ConfigurationViewPage,
+    SearchViewPage
   ],
   providers: [
     StatusBar,

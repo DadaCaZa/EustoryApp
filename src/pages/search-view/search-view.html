@@ -1,0 +1,48 @@
+<!--
+  Generated template for the SearchViewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar >
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Detectar un POI</ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  
+    <ion-searchbar
+             [(ngModel)]="myInput"
+             [showCancelButton]="shouldShowCancel"
+             (ionInput)="onInput($event)"
+             (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+
+
+    <ion-list>
+
+    </ion-list>
+
+    <ion-list>
+      <h2>Métodos para dectectar el POI</h2>
+        <button menuClose ion-item>
+            <ion-img   img-placeholder-background src="assets/imgs/lector-qr.png"></ion-img>
+        </button>
+     
+     
+          <button menuClose ion-item>
+             <ion-img   img-placeholder-background width="300" height="100"src="assets/imgs/geolo.png"></ion-img>
+          </button>
+      
+      
+          <button menuClose ion-item>
+            <ion-img   img-placeholder-background width="300" height="100"src="assets/imgs/reconImag.png"></ion-img>
+           </button>
+    </ion-list>
+
+</ion-content>
