@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
+import { PoiViewPage } from '../pages/poi-view/poi-view'
 import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view'
 
 
@@ -17,6 +18,7 @@ import { ConfigurationViewPage} from '../pages/configuration-view/configuration-
     HomePage,
     LoginPage,
     ProfilePage,
+    PoiViewPage,
     ConfigurationViewPage
   ],
   imports: [
@@ -29,6 +31,7 @@ import { ConfigurationViewPage} from '../pages/configuration-view/configuration-
     HomePage,
     LoginPage,
     ProfilePage,
+    PoiViewPage,
     ConfigurationViewPage
   ],
   providers: [

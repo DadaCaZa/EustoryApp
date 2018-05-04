@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform,  } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -8,6 +8,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ProfilePage} from '../pages/profile/profile';
 import { ConfigurationViewPage } from '../pages/configuration-view/configuration-view'
+import { LoginPage } from '../pages/login/login';
 @Component({
   templateUrl: 'app.html'
 })
@@ -44,6 +45,12 @@ export class MyApp {
 
   openPage(page){
     this.nav.setRoot(page.component);
+  }
+
+  disconnectUser(){
+    
+    this.nav.setRoot(LoginPage);
+    
   }
 }
 

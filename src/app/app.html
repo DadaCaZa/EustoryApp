@@ -11,6 +11,9 @@
         <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
           <ion-icon item-left name="{{p.icon}}"></ion-icon> {{p.title}}
         </button>
+        <button menuClose ion-item (click)="disconnectUser()"> 
+            <ion-icon item-left name="close-circle"></ion-icon>Desconectar
+         </button>
       </ion-list>
     </ion-content>
   
