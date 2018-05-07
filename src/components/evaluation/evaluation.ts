@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EvaluationModel } from '../../models/evaluation-model';
 
 /**
  * Generated class for the EvaluationComponent component.

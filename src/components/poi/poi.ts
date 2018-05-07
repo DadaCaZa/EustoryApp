@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PoiModel } from '../../models/poi-model';
 
 /**
  * Generated class for the PoiComponent component.

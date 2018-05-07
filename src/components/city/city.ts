@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CityModel } from '../../models/city-model';
 
 /**
  * Generated class for the CityComponent component.

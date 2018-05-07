@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TagModel } from '../../models/tag-model';
 
 /**
  * Generated class for the TagComponent component.

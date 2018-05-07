@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserModel } from '../../models/user-model';
 
 /**
  * Generated class for the UserComponent component.
@@ -12,11 +13,6 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello UserComponent Component');
-    this.text = 'Hello World';
-  }
+  constructor() {  }
 
 }

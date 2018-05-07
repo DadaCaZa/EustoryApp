@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { YincanaModel } from '../../models/yincana-model';
 
 /**
  * Generated class for the YincanaComponent component.

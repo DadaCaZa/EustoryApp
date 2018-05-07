@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { PoiViewPage } from  '../poi-view/poi-view';
+
 /**
  * Generated class for the ListpoiPage page.
  *
@@ -24,6 +26,10 @@ export class ListpoiPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ListpoiPage');
+  }
+
+  gotoPoiDescription(){
+    this.navCtrl.push(PoiViewPage,{namePoi:"Indautxu"});
   }
 
 }

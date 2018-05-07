@@ -15,7 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PoiViewPage {
 
+  namePoi: string="";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.namePoi= this.navParams.get("namePoi");
   }
 
   ionViewDidLoad() {

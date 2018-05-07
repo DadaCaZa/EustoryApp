@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThematicModel } from '../../models/thematic-model';
 
 /**
  * Generated class for the ThematicComponent component.
@@ -12,11 +13,6 @@ import { Component } from '@angular/core';
 })
 export class ThematicComponent {
 
-  text: string;
-
-  constructor() {
-    console.log('Hello ThematicComponent Component');
-    this.text = 'Hello World';
-  }
+  constructor() {  }
 
 }
