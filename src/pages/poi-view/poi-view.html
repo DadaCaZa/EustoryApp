@@ -1,13 +1,42 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>{{namePoi}}</ion-title>
   </ion-navbar>
+  <ion-toolbar no-border-top color="primary">
+      <ion-segment [(ngModel)]="apps" color="light">
+        <ion-segment-button value="paid">
+          Paid
+        </ion-segment-button>
+        <ion-segment-button value="free">
+          Free
+        </ion-segment-button>
+        <ion-segment-button value="top">
+          Top
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  
 </ion-header>
 
 
 <ion-content padding>
 
 </ion-content>
+<ion-footer >
+    <ion-toolbar no-border-top color="primary">
+        <ion-segment [(ngModel)]="apps" color="light">
+          <ion-segment-button value="paid">
+            Paid
+          </ion-segment-button>
+          <ion-segment-button value="free">
+            Free
+          </ion-segment-button>
+          <ion-segment-button value="top">
+            Top
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+</ion-footer>
