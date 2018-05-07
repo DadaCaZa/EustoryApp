@@ -18,6 +18,21 @@
   <!-- cordova.js required for cordova apps (remove if not needed) -->
   <script src="cordova.js"></script>
 
+  <!-- Configuración FireBase-->
+  <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBL69EtYEYMWsUGeQIJE6tVi5QHuafVtyw",
+      authDomain: "eustoryapp-c813d.firebaseapp.com",
+      databaseURL: "https://eustoryapp-c813d.firebaseio.com",
+      projectId: "eustoryapp-c813d",
+      storageBucket: "eustoryapp-c813d.appspot.com",
+      messagingSenderId: "514237387874"
+   };
+   firebase.initializeApp(config);
+  </script>
+
   <!-- un-comment this code to enable service worker
   <script>
     if ('serviceWorker' in navigator) {

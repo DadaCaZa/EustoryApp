@@ -38,9 +38,7 @@ export class MyApp {
       {title :'Home', component: HomePage, icon: 'home'},
       {title :'Perfil', component: ProfilePage, icon: 'person'},
       {title :'Detectar', component: SearchViewPage, icon: 'search'},
-      {title :'Configuración', component: ConfigurationViewPage, icon: 'construct'},
-      
-
+      {title :'Configuración', component: ConfigurationViewPage, icon: 'construct'}
     ];
   }
 

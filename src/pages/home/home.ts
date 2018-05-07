@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ListpoiPage } from '../listpoi/listpoi'
 
 
 
@@ -13,5 +14,8 @@ export class HomePage {
    
   }
 
+  gotoListPois(){
+    this.navCtrl.push(ListpoiPage, {id: 1});
+  }
 
 }
