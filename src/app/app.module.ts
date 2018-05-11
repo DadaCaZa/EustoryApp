@@ -16,6 +16,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 
+
 export const firebaseConfig={
       apiKey: "AIzaSyBL69EtYEYMWsUGeQIJE6tVi5QHuafVtyw",
       authDomain: "eustoryapp-c813d.firebaseapp.com",
@@ -56,6 +57,7 @@ export const firebaseConfig={
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
+    
   ]
 })
 export class AppModule {

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
+
 import { IonicPageModule } from 'ionic-angular';
 import { PoiViewPage } from './poi-view';
+
 
 @NgModule({
   declarations: [
@@ -8,6 +10,7 @@ import { PoiViewPage } from './poi-view';
   ],
   imports: [
     IonicPageModule.forChild(PoiViewPage),
+    
   ],
 })
 export class PoiViewPageModule {}

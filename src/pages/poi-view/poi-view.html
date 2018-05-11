@@ -7,35 +7,50 @@
   </ion-navbar>
   <ion-toolbar no-border-top color="primary">
       <ion-segment [(ngModel)]="apps" color="light">
-        <ion-segment-button value="paid">
-          Paid
+        <ion-segment-button value="info">
+          Info
         </ion-segment-button>
-        <ion-segment-button value="free">
-          Free
+        <ion-segment-button value="evaluacion">
+          Evaluación
         </ion-segment-button>
-        <ion-segment-button value="top">
-          Top
+        <ion-segment-button value="pasadoPresente">
+          Pasado y presente
         </ion-segment-button>
       </ion-segment>
-    </ion-toolbar>
-  
+    </ion-toolbar> 
+
 </ion-header>
 
-
 <ion-content padding>
+
+
+ 
+
+  <div class="images">
+    <!-- Aqui hay que poner un ngfor que se recorra todo el array de imagenes, en el segundo div-->
+    <div class="one-image" *ngFor="let image of images">
+      <!-- abira que sustituir la url por el atributo donde se almacena la imagen -->
+      <img src="assets/imgs/{{image}}"   (click)="makeZoomImage(image)">
+    </div>
+  </div>
+
+
+
+
+
 
 </ion-content>
 <ion-footer >
     <ion-toolbar no-border-top color="primary">
-        <ion-segment [(ngModel)]="apps" color="light">
-          <ion-segment-button value="paid">
-            Paid
+        <ion-segment [(ngModel)]="apps" color="light" >
+          <ion-segment-button value="llamar">
+            Llamar
           </ion-segment-button>
-          <ion-segment-button value="free">
-            Free
+          <ion-segment-button value="web">
+            Web
           </ion-segment-button>
-          <ion-segment-button value="top">
-            Top
+          <ion-segment-button value="nav">
+            Nav
           </ion-segment-button>
         </ion-segment>
       </ion-toolbar>
