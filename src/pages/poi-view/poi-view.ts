@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController, } from 'ionic-angular';
+import { TimelineViewPage } from '../timeline-view/timeline-view';
+
 
 /**
  * Generated class for the PoiViewPage page.
@@ -19,13 +21,15 @@ export class PoiViewPage {
   images=['1.png','geolo.png','lector-qr.png','reconImag.png']
   //Nombre del poi seleccionado
   namePoi: string="";
-  constructor(public navCtrl: NavController, public navParams: NavParams,) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
     this.namePoi= this.navParams.get("namePoi");
     
   }
 
-  zoomImage(image: string){
-    
+  //Metodo que llama a la modal view que tiene el slide de la foto actual y la antigua
+  gotoTimeLine(){
+    let modal= this.modalCtrl.create(TimelineViewPage);
+    modal.present();
   }
 
 

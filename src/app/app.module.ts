@@ -3,6 +3,7 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -12,6 +13,7 @@ import { ListpoiPage } from '../pages/listpoi/listpoi';
 import { PoiViewPage } from '../pages/poi-view/poi-view';
 import { SearchViewPage } from '../pages/search-view/search-view';
 import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view';
+import { TimelineViewPage } from '../pages/timeline-view/timeline-view';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
@@ -35,12 +37,14 @@ export const firebaseConfig={
     ListpoiPage,
     ConfigurationViewPage,
     SearchViewPage,
+    TimelineViewPage,
     
   ],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(firebaseConfig,'eustoryapp'),
     AngularFireDatabaseModule,
+    IonicImageViewerModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -53,6 +57,7 @@ export const firebaseConfig={
     ListpoiPage,
     ConfigurationViewPage,
     SearchViewPage,
+    TimelineViewPage,
     
   ],
   providers: [

@@ -13,7 +13,8 @@
         <ion-segment-button value="evaluacion">
           Comentarios
         </ion-segment-button>
-        <ion-segment-button value="pasadoPresente">
+        <!-- Boton que te envia al slide de la foto nueva y antigua-->
+        <ion-segment-button value="pasadoPresente" (click)=gotoTimeLine()>
           Tiempo
         </ion-segment-button>
       </ion-segment>
@@ -22,11 +23,36 @@
 </ion-header>
 
 <ion-content padding>
+<h2>Nombre del Poi</h2>
+<ion-list item-borderless>
+  <ion-label><ion-icon name="pin"></ion-icon> Dirección</ion-label>
+  <ion-label><ion-icon name="call"></ion-icon> Teléfono</ion-label>
+  <ion-label><ion-icon name="mail"></ion-icon> Mail</ion-label>
+  <ion-label><ion-icon name="cash"></ion-icon> Precio</ion-label>
+  <ion-label><ion-icon name="time"></ion-icon> Horario</ion-label>
+</ion-list>
+
+<h2>Descripción</h2>
+<div class="infotext">
+ <p justify>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+ </p>
+</div>
+<div contain>
+    <ion-label item-borderless ><ion-icon name="pricetag"></ion-icon> Tags</ion-label><hr>
+</div>
   <div class="images">
+    <ion-label item-borderless>Galería de imagenes</ion-label><br>
     <!-- Aqui hay que poner un ngfor que se recorra todo el array de imagenes, en el segundo div-->
     <div class="one-image" *ngFor="let image of images">
       <!-- abira que sustituir la url por el atributo donde se almacena la imagen -->
-      <img src="assets/imgs/{{image}}" (click)="zoomImage('image')"/>
+      <!-- imageViewer permite hacer zoom a una imagen y verla en grande-->
+      <img src="assets/imgs/{{image}}" imageViewer/>
     </div>
   </div>
 </ion-content>
