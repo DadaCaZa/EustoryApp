@@ -6,12 +6,15 @@ page-search-view {
         justify-content: space-between;
         border: none !important;
 
-        ion-img{
+        img{
             
             border: none !important;
             margin-bottom: 16px !important;
             width: 100%;
             height: 100%;
+            background-size: cover;
+            background-position: center; 
+            padding: 2%;
             
             
 

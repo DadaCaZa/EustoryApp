@@ -34,7 +34,8 @@ export const firebaseConfig={
     PoiViewPage,
     ListpoiPage,
     ConfigurationViewPage,
-    SearchViewPage
+    SearchViewPage,
+    
   ],
   imports: [
     BrowserModule,
@@ -51,12 +52,14 @@ export const firebaseConfig={
     PoiViewPage,
     ListpoiPage,
     ConfigurationViewPage,
-    SearchViewPage
+    SearchViewPage,
+    
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+   
     
   ]
 })

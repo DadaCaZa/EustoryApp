@@ -4,6 +4,7 @@ import { IonicPageModule } from 'ionic-angular';
 import { PoiViewPage } from './poi-view';
 
 
+
 @NgModule({
   declarations: [
     PoiViewPage,

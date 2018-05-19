@@ -15,34 +15,34 @@
 
 
 <ion-content padding>
-  
+  <!--
     <ion-searchbar
              [(ngModel)]="myInput"
              [showCancelButton]="shouldShowCancel"
              (ionInput)="onInput($event)"
              (ionCancel)="onCancel($event)">
     </ion-searchbar>
-
+-->
 
     <ion-list>
 
     </ion-list>
-
+  <div text-center>
     <ion-list>
-      <h2>Métodos para dectectar el POI</h2>
+      <h2>Detectar un POI</h2>
+      <button menuClose ion-item>
+            <img   img-placeholder-background src="assets/imgs/lector-qr.png">
+       </button>
+     
+     
         <button menuClose ion-item>
-            <ion-img   img-placeholder-background src="assets/imgs/lector-qr.png"></ion-img>
-        </button>
-     
-     
-          <button menuClose ion-item>
-             <ion-img   img-placeholder-background src="assets/imgs/geolo.png"></ion-img>
+             <img   img-placeholder-background src="assets/imgs/geolo.png">
           </button>
       
-      
-          <button menuClose ion-item>
-            <ion-img   img-placeholder-background src="assets/imgs/reconImag.png"></ion-img>
-           </button>
+      <!-- <button menuClose ion-item> </button>-->
+        <button menuClose ion-item>
+            <img   img-placeholder-background src="assets/imgs/reconImag.png">
+          </button>
     </ion-list>
-
+  </div>
 </ion-content>

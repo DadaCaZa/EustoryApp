@@ -11,10 +11,10 @@
           Info
         </ion-segment-button>
         <ion-segment-button value="evaluacion">
-          Evaluación
+          Comentarios
         </ion-segment-button>
         <ion-segment-button value="pasadoPresente">
-          Pasado y presente
+          Tiempo
         </ion-segment-button>
       </ion-segment>
     </ion-toolbar> 
@@ -22,24 +22,15 @@
 </ion-header>
 
 <ion-content padding>
-
-
- 
-
   <div class="images">
     <!-- Aqui hay que poner un ngfor que se recorra todo el array de imagenes, en el segundo div-->
     <div class="one-image" *ngFor="let image of images">
       <!-- abira que sustituir la url por el atributo donde se almacena la imagen -->
-      <img src="assets/imgs/{{image}}"   (click)="makeZoomImage(image)">
+      <img src="assets/imgs/{{image}}" (click)="zoomImage('image')"/>
     </div>
   </div>
-
-
-
-
-
-
 </ion-content>
+
 <ion-footer >
     <ion-toolbar no-border-top color="primary">
         <ion-segment [(ngModel)]="apps" color="light" >
