@@ -33,7 +33,7 @@
 </ion-list>
 
 <h2>Descripción</h2>
-<div class="infotext">
+<div  class="texto">
  <p justify>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -43,11 +43,20 @@
     sunt in culpa qui officia deserunt mollit anim id est laborum.
  </p>
 </div>
-<div contain>
-    <ion-label item-borderless ><ion-icon name="pricetag"></ion-icon> Tags</ion-label><hr>
+
+<div container >
+    <ion-label ion-button round><ion-icon name="pricetags"></ion-icon> Tags</ion-label>
+    <ion-row>
+      <div  item-borderless class="tagsC" *ngFor="let tag of tags" >
+       <ion-col col-3>
+         <ion-label ion-button round ><ion-icon name="pricetag"></ion-icon> {{tag}}</ion-label>
+        </ion-col> 
+      </div>
+    </ion-row>
 </div>
+
+  <h2 item-borderless>Galería de imagenes</h2><br>
   <div class="images">
-    <ion-label item-borderless>Galería de imagenes</ion-label><br>
     <!-- Aqui hay que poner un ngfor que se recorra todo el array de imagenes, en el segundo div-->
     <div class="one-image" *ngFor="let image of images">
       <!-- abira que sustituir la url por el atributo donde se almacena la imagen -->

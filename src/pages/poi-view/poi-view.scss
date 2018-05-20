@@ -26,11 +26,16 @@ page-poi-view{
     .one-image{
         margin: 2px;
     }
-    .ion-label{
-        border-top: 0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-bottom: 0px;
-    }
+   .texto{
+        margin:2px;
+   }
+   .tagsC{
+        margin:2px !important;
+        >*{
+            
+            margin:0px !important;
+        }
+   }
+   
   
 }
