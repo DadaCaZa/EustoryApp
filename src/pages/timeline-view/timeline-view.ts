@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, ViewController, NavParams } from 'ionic-angular';
 
 /**
  * Generated class for the TimelineViewPage page.
@@ -15,9 +15,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class TimelineViewPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  //Variable donde se guardaran las imagenes
+  imgOldNew: string="";
+  constructor(public viewCtrl: ViewController, public navParams: NavParams) {
+    this.imgOldNew= this.navParams.get("lineTimeImg");
   }
 
-
+  dismiss(){
+    this.viewCtrl.dismiss();
+  }
 
 }

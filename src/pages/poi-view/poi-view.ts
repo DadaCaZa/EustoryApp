@@ -21,6 +21,7 @@ export class PoiViewPage {
   images=['1.png','geolo.png','lector-qr.png','reconImag.png']
   //Nombre del poi seleccionado
   namePoi: string="";
+  imgOldNew=['1.png','geolo.png'];
   constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
     this.namePoi= this.navParams.get("namePoi");
     
@@ -28,7 +29,7 @@ export class PoiViewPage {
 
   //Metodo que llama a la modal view que tiene el slide de la foto actual y la antigua
   gotoTimeLine(){
-    let modal= this.modalCtrl.create(TimelineViewPage);
+    let modal= this.modalCtrl.create(TimelineViewPage,{lineTimeImg: this.imgOldNew});
     modal.present();
   }
 

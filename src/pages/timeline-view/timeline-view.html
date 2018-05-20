@@ -2,8 +2,10 @@
 
   <ion-toolbar color="primary">
     <ion-title>Linea temporal</ion-title>
-    <ion-buttons colo="secundary">
-      <button  end ion-button icon-only  name="close" (click)="dismiss()"></button>
+    <ion-buttons color="secundary" end>
+      <button   ion-button    (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
     </ion-buttons>
   </ion-toolbar>
 
@@ -11,5 +13,11 @@
 
 
 <ion-content padding>
-
+    <ion-slides pager="true" loop="false"  effect="fade" zoom="true"  >
+        <ion-slide *ngFor="let image of imgOldNew">
+            <div class="swiper-zoom-container">
+            <img src="assets/imgs/{{image}}" />
+            </div>
+        </ion-slide>
+      </ion-slides>
 </ion-content>

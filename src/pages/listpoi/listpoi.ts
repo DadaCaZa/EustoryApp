@@ -23,11 +23,7 @@ export class ListpoiPage {
    this.idTematica =this.navParams.get("id");
 
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ListpoiPage');
-  }
-
+  
   gotoPoiDescription(){
     this.navCtrl.push(PoiViewPage,{namePoi:"Indautxu"});
   }
