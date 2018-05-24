@@ -24,5 +24,24 @@ page-listpoi {
           width: 100%;
           color: #fff;
         }}
-    
+
+    .ion-title{
+      padding-top: 1%;
+    }
+    .selector{
+      
+     
+      padding: 0;
+      white-space: normal;
+     
+      
+
+      background-color: transparent;
+      color: white;
+      
+      
+    }
+    ion-select{
+      max-width: 70% !important;
+  }
 }

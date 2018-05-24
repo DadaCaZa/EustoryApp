@@ -19,13 +19,18 @@ export class ListpoiPage {
 
   // Ejemplo de que recibe el id de la temática seleccionada para asi obtener el listad de sus pois
   idTematica: number= null;
+  //Listado de opciones para visualizar los pois de la temáticas
+  options:string;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
    this.idTematica =this.navParams.get("id");
-
+   this.options = "list";
   }
   
   gotoPoiDescription(){
     this.navCtrl.push(PoiViewPage,{namePoi:"Indautxu"});
   }
-
+  prueba(){
+    
+    
+  }
 }

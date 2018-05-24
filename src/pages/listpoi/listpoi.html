@@ -3,12 +3,22 @@
     <button  ion-button menuToggle>
       <ion-icon  name="menu"></ion-icon>
     </button>
-    <ion-title >Temática: {{idTematica}} </ion-title>
+    <ion-title>
+      Temática: {{idTematica}} 
+    </ion-title>
+    <ion-item class="selector" item-borderless> 
+        <ion-select [(ngModel)]="options" interface="popover" >
+            <ion-option value="qr" (ionSelect)="prueba()">Lector QR</ion-option>
+            <ion-option value="list" (ionSelect)="prueba()">Listado</ion-option>
+            <ion-option value="map" (ionSelect)="prueba()">Geolocalización</ion-option>
+            <ion-option value="detection" (ionSelect)="prueba()">Foto</ion-option>
+            <ion-option value="AR" (ionSelect)="prueba()">RA </ion-option>
+          </ion-select>
+        </ion-item>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="card-background-page">
-    
     <ion-card (click)="gotoPoiDescription()">
       <img src="assets/imgs/1.png"/>
       <div class="card-title">Palacetes 1</div>

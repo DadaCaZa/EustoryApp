@@ -17,6 +17,9 @@ import { TimelineViewPage } from '../pages/timeline-view/timeline-view';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+//Carga de las págians de los plugins
+import { ReaderQrViewPage } from '../pages/reader-qr-view/reader-qr-view'
+
 
 
 export const firebaseConfig={
@@ -38,6 +41,7 @@ export const firebaseConfig={
     ConfigurationViewPage,
     SearchViewPage,
     TimelineViewPage,
+    ReaderQrViewPage,
     
   ],
   imports: [
@@ -58,6 +62,7 @@ export const firebaseConfig={
     ConfigurationViewPage,
     SearchViewPage,
     TimelineViewPage,
+    ReaderQrViewPage,
     
   ],
   providers: [
