@@ -1,5 +1,22 @@
 page-login {
-    
+    img{
+            
+        border: none !important;
+        margin-bottom: 16px !important;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center; 
+        padding: 2%;
+        
+        
+
+        
+        input-wrapper{
+            text-align: center;
+        }
+        
+    }
     .container{
         
         height:100%;
