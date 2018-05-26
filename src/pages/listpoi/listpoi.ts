@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { PoiViewPage } from  '../poi-view/poi-view';
+import { ReaderQrViewPage } from '../reader-qr-view/reader-qr-view';
 
 /**
  * Generated class for the ListpoiPage page.
@@ -32,5 +33,8 @@ export class ListpoiPage {
   prueba(){
     
     
+  }
+  loadQrScanner(){
+    this.navCtrl.push(ReaderQrViewPage);
   }
 }

@@ -18,7 +18,9 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 //Carga de las págians de los plugins
-import { ReaderQrViewPage } from '../pages/reader-qr-view/reader-qr-view'
+import { ReaderQrViewPage } from '../pages/reader-qr-view/reader-qr-view';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+
 
 
 
@@ -68,9 +70,8 @@ export const firebaseConfig={
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-   
-    
+    BarcodeScanner,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {
