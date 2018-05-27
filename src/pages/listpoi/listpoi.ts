@@ -29,7 +29,7 @@ export class ListpoiPage {
     
   }
   loadQrScanner(){
-    this.options = "list";
+    
     this.navCtrl.push(ReaderQrViewPage);
     
   }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ReaderQrViewPage } from '../reader-qr-view/reader-qr-view';
 
 /**
  * Generated class for the SearchViewPage page.
@@ -22,4 +23,7 @@ export class SearchViewPage {
     console.log('ionViewDidLoad SearchViewPage');
   }
 
+  readQr(){
+    this.navCtrl.push(ReaderQrViewPage);
+  }
 }
