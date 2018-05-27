@@ -7,6 +7,7 @@ import { PoiComponent } from './poi/poi';
 import { TagComponent } from './tag/tag';
 import { YincanaComponent } from './yincana/yincana';
 import { EvaluationComponent } from './evaluation/evaluation';
+
 @NgModule({
 	declarations: [UserComponent,
     ThematicComponent,
@@ -15,7 +16,7 @@ import { EvaluationComponent } from './evaluation/evaluation';
     PoiComponent,
     TagComponent,
     YincanaComponent,
-    EvaluationComponent],
+    EvaluationComponent,],
 	imports: [],
 	exports: [UserComponent,
     ThematicComponent,
@@ -24,6 +25,6 @@ import { EvaluationComponent } from './evaluation/evaluation';
     PoiComponent,
     TagComponent,
     YincanaComponent,
-    EvaluationComponent]
+    EvaluationComponent,]
 })
 export class ComponentsModule {}

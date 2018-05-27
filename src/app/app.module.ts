@@ -14,12 +14,14 @@ import { PoiViewPage } from '../pages/poi-view/poi-view';
 import { SearchViewPage } from '../pages/search-view/search-view';
 import { ConfigurationViewPage} from '../pages/configuration-view/configuration-view';
 import { TimelineViewPage } from '../pages/timeline-view/timeline-view';
+import { CommentsViewPage } from '../pages/comments-view/comments-view';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 //Carga de las págians de los plugins
 import { ReaderQrViewPage } from '../pages/reader-qr-view/reader-qr-view';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+
 
 
 
@@ -43,6 +45,7 @@ export const firebaseConfig={
     ConfigurationViewPage,
     SearchViewPage,
     TimelineViewPage,
+    CommentsViewPage,
     ReaderQrViewPage,
     
   ],
@@ -64,6 +67,7 @@ export const firebaseConfig={
     ConfigurationViewPage,
     SearchViewPage,
     TimelineViewPage,
+    CommentsViewPage,
     ReaderQrViewPage,
     
   ],
@@ -74,8 +78,5 @@ export const firebaseConfig={
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {
-
-  
-}
+export class AppModule {}
 

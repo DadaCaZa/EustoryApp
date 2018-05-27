@@ -8,8 +8,8 @@
     </ion-title>
     <ion-item class="selector" item-borderless> 
         <ion-select [(ngModel)]="options" interface="popover" >
-            <ion-option value="qr" (ionSelect)="loadQrScanner()">Lector QR</ion-option>
             <ion-option value="list" (ionSelect)="prueba()">Listado</ion-option>
+            <ion-option value="qr" (ionSelect)="loadQrScanner()">Lector QR</ion-option>  
             <ion-option value="map" (ionSelect)="prueba()">Geolocalización</ion-option>
             <ion-option value="detection" (ionSelect)="prueba()">Foto</ion-option>
             <ion-option value="AR" (ionSelect)="prueba()">RA </ion-option>

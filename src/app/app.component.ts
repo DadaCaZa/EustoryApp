@@ -37,7 +37,7 @@ export class MyApp {
     this.pages =[
       {title :'Home', component: HomePage, icon: 'home'},
       {title :'Perfil', component: ProfilePage, icon: 'person'},
-      {title :'Detectar', component: SearchViewPage, icon: 'search'},
+      {title :'Explorar', component: SearchViewPage, icon: 'search'},
       {title :'Configuración', component: ConfigurationViewPage, icon: 'construct'}
     ];
   }
