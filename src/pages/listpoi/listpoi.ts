@@ -28,9 +28,9 @@ export class ListpoiPage {
   prueba(){
     
   }
+  // Metodo que envia a la pagina del lector de códigos QR
   loadQrScanner(){
-    
     this.navCtrl.push(ReaderQrViewPage);
-    
   }
+  
 }
