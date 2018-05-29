@@ -5,6 +5,7 @@ import { PoiViewPage } from  '../poi-view/poi-view';
 import { ReaderQrViewPage } from '../reader-qr-view/reader-qr-view';
 
 
+
 @IonicPage()
 @Component({
   selector: 'page-listpoi',

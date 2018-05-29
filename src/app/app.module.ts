@@ -18,6 +18,7 @@ import { CommentsViewPage } from '../pages/comments-view/comments-view';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+
 //Carga de las páginas de los plugins
 import { ReaderQrViewPage } from '../pages/reader-qr-view/reader-qr-view';
 import { BarcodeScanner } from '@ionic-native/barcode-scanner';
@@ -75,6 +76,7 @@ export const firebaseConfig={
     StatusBar,
     SplashScreen,
     BarcodeScanner,
+    
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
